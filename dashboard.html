@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Job Tracker Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+
+
+<aside class="sidebar">
+
+<h2>
+<span>Job</span>Track
+</h2>
+
+
+<ul>
+
+<li class="active">🏠 Dashboard</li>
+
+<li onclick="location.href='application.html'">
+📄 Applications
+</li>
+
+<li onclick="location.href='analytics.html'">
+📊 Analytics
+</li>
+
+<li onclick="location.href='profile.html'">
+👤 Profile
+</li>
+
+<li onclick="location.href=' '">
+🚪 Logout
+</li>
+
+</ul>
+
+
+</aside>
+
+
+
+
+
+<main>
+
+
+<div class="top">
+
+
+<div>
+
+<h1>
+Good Morning 👋
+</h1>
+
+<p>
+Track your career journey smartly
+</p>
+
+</div>
+
+
+<button onclick="location.href='application.html'">
++ Add Application
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<section class="cards">
+
+
+<div class="card">
+
+<h3>Total Applications</h3>
+
+<h1 id="total">
+0
+</h1>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Applied</h3>
+
+<h1 id="applied">
+0
+</h1>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Interview</h3>
+
+<h1 id="interview">
+0
+</h1>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>Selected</h3>
+
+<h1 id="selected">
+0
+</h1>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<div class="dashboard-grid">
+
+
+
+
+<div class="box">
+
+
+<h2>
+Recent Applications
+</h2>
+
+
+<div id="recent">
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="box">
+
+
+<h2>
+Application Progress
+</h2>
+
+
+<div class="progress">
+
+<div id="bar">
+
+</div>
+
+</div>
+
+
+<h3 id="percentage">
+0% Success Rate
+</h3>
+
+
+
+<div class="timeline">
+
+<p>🟢 Application Created</p>
+
+<p>🟢 Interview Tracking</p>
+
+<p>🟢 Offer Monitoring</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="box upcoming">
+
+
+<h2>
+Upcoming Activity
+</h2>
+
+
+<p>
+📅 Keep checking your applications regularly
+</p>
+
+
+<p>
+💼 Prepare for interviews
+</p>
+
+
+<p>
+🚀 Keep applying for new opportunities
+</p>
+
+
+</div>
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+<script src="dashboard.js"></script>
+
+
+</body>
+</html>

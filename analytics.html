@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Analytics</title>
+
+<link rel="stylesheet" href="analytics.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+
+
+<div class="main">
+
+
+<h1>
+Application Analytics 📊
+</h1>
+
+<p class="subtitle">
+Understand your job search performance
+</p>
+
+
+<div class="cards">
+
+
+<div class="card">
+<h4>Total Applied</h4>
+<h2 id="total">0</h2>
+</div>
+
+
+
+<div class="card">
+<h4>Interview Rate</h4>
+<h2 id="interviewRate">0%</h2>
+</div>
+
+
+
+
+<div class="card">
+<h4>Selection Rate</h4>
+<h2 id="selectionRate">0%</h2>
+</div>
+
+
+
+<div class="card">
+<h4>Rejected</h4>
+<h2 id="rejected">0</h2>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="top-section">
+
+
+
+
+
+<div class="status box">
+
+
+<h3>Application Status</h3>
+
+
+<p>Applied</p>
+<div class="progress">
+<div id="applyBar"></div>
+</div>
+
+
+
+<p>Interview</p>
+<div class="progress">
+<div id="interviewBar"></div>
+</div>
+
+
+
+
+<p>Selected</p>
+<div class="progress">
+<div id="selectedBar"></div>
+</div>
+
+
+
+
+<p>Rejected</p>
+<div class="progress">
+<div id="rejectBar"></div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="insight box">
+
+
+<h3>Career Insights</h3>
+
+<div id="message"></div>
+
+
+<div class="tips">
+
+<p>💡 Apply consistently</p>
+
+<p>💡 Improve interview skills</p>
+
+<p>💡 Track every opportunity</p>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="growth box">
+
+
+<h3>Career Growth Tracker 🚀</h3>
+
+
+<div class="growth-content">
+
+
+<div>
+
+<h2 id="activeCount">0</h2>
+
+<p>Active Applications</p>
+
+</div>
+
+
+
+
+<div>
+
+<h2>7</h2>
+
+<p>Days Goal Streak</p>
+
+</div>
+
+
+
+
+<div>
+
+<h2>80%</h2>
+
+<p>Profile Strength</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="monthly box">
+
+
+<h3>Job Search Performance</h3>
+
+
+<div class="months">
+
+
+<div>
+<span></span>
+<p>Jan</p>
+</div>
+
+
+
+<div>
+<span></span>
+<p>Feb</p>
+</div>
+
+
+
+
+<div>
+<span></span>
+<p>Mar</p>
+</div>
+
+
+
+<div>
+<span></span>
+<p>Apr</p>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<script src="analytics.js"></script>
+
+
+<script>
+
+
+let apps =
+JSON.parse(localStorage.getItem("applications")) || [];
+
+
+document.getElementById("activeCount").innerHTML =
+apps.length;
+
+
+</script>
+
+
+</body>
+</html>
