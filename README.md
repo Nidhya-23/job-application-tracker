@@ -1,2 +1,2 @@
 # job-application-tracker
-Simple Job Application Tracker Website built by html, css and javascript.
+Job Application Tracker is a simple and user-friendly web application that helps job seekers organize and manage their job applications in one place. Users can add, edit, and track applications, monitor application status (Applied, Interview, Offer, Rejected), view analytics and progress, and stay organized throughout their job search journey. The website provides an intuitive dashboard and visual insights to help users efficiently manage and improve their job-hunting process.
